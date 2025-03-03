@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const catalogos = [
-        { titulo: "Catálogo 1", archivo: "catalogos/CATÁLOGO XBRI TBR 2025 - VIETNAM.pdf", imagen: "img/PORTADA VIETNAM.png" },
+        { titulo: "Catálogo 1", archivo: "catalogos/CATALOGO XBRI TBR 2025 VIETNAM 100mb.pdf", imagen: "img/PORTADA VIETNAM.png" },
         { titulo: "Catálogo 2", archivo: "catalogos/catalogo2.pdf", imagen: "img/preview2.jpg" },
         { titulo: "Catálogo 3", archivo: "catalogos/catalogo3.pdf", imagen: "img/preview3.jpg" }
     ];
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pdfCanvas.addEventListener("click", () => {
         isZoomed = !isZoomed; // Alternar entre zoom in y zoom out
         if (isZoomed) {
-            scale = 2.0;
+            scale = 2.5;
         } else {
             scale = 1.2;
             pdfCanvas.style.transform = `translate(0px, 0px)`;
