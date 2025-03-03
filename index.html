@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+
+    <main>
+        <div class="catalogo-container" id="catalogo-container">
+            <!-- Los catálogos se generarán aquí con JavaScript -->
+        </div>
+
+        <!-- Contenedor para mostrar el visor del PDF -->
+        <div id="visor-pdf-container">
+            <canvas id="pdf-canvas"></canvas>
+            <div class="pdf-controls">
+                <button id="prev-page">Anterior</button>
+                <button id="cerrar-pdf">Cerrar Visor</button>
+                <button id="next-page">Siguiente</button>
+            </div>
+            <p id="page-info">Página <span id="page-num">1</span> de <span id="page-count">?</span></p>
+        </div>
+        
+        
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
